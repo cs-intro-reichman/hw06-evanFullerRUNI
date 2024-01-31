@@ -15,12 +15,19 @@ public class Editor2 {
 		int height = Integer.parseInt(args[2]);
 		Color[][] imageIn = Runigram.read(fileName);
 		Color[][] scaledImage = Runigram.scaled(imageIn, width, height);
+		// added these extra display() calls to fix rendering issues
 		// Displays the source image
 		Runigram.setCanvas(imageIn);
+		Runigram.display(imageIn);
+		Runigram.display(imageIn);
+		Runigram.display(imageIn);
 		Runigram.display(imageIn);
 		StdDraw.pause(3000); 
 		// Displays the scaled image.
 		Runigram.setCanvas(scaledImage);
-		Runigram.display(scaledImage);					
+		Runigram.display(scaledImage);
+		Runigram.display(scaledImage);
+		Runigram.display(scaledImage);
+		Runigram.display(scaledImage);
 	}
 }

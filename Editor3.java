@@ -15,10 +15,13 @@ public class Editor3 {
 	public static void main (String[] args) {
 		String source = args[0];
 		String target = args[1];
-		int n = Integer.parseInt(args[2]);
+		//String target2 = args[2];
+		int n = Integer.parseInt(args[3]);
 		Color[][] sourceImage = Runigram.read(source);
 		Color[][] targetImage = Runigram.read(target);
+		//Color[][] targetImage2 = Runigram.read(target2);
 		Runigram.setCanvas(sourceImage);
 		Runigram.morph(sourceImage, targetImage, n);
+		//Runigram.morph(targetImage, targetImage2, n);
 	}
 }
