@@ -29,9 +29,27 @@ public class Editor1 {
 		// Next, displays the input image, and pauses for a few seconds. 
 		// Finally, displays the output image.
 		// (Notice that both images have the same dimensions).
+
+		// added all these extra display() calls to fix rendering issues
 		Runigram.setCanvas(imageIn);
 		Runigram.display(imageIn);
-		StdDraw.pause(3000); 
-		Runigram.display(imageOut);							
+		//StdDraw.pause(2000);
+		Runigram.display(imageIn);
+		//StdDraw.pause(2000);
+		Runigram.display(imageIn);
+		//StdDraw.pause(2000);
+		Runigram.display(imageIn);
+		StdDraw.pause(3000);
+		//Runigram.setCanvas(imageIn);
+		//StdDraw.pause(2000);
+		Runigram.display(imageOut);
+		//StdDraw.pause(2000);
+		Runigram.display(imageOut);
+		//StdDraw.pause(2000);
+		Runigram.display(imageOut);
+		//StdDraw.pause(2000);
+		Runigram.display(imageOut);
+		//StdDraw.pause(2000);
+		//Runigram.display(imageOut);
 	}
 }
